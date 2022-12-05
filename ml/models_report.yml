@@ -263,8 +263,8 @@ D48Model:
     arch: "GRU"
     MAE: 0.2298
     step_ms: 7
-    params: 137875
-    trainable: 137875
+    params: 78277
+    trainable: 78277
     lr: 0.0001
     early_stop: True
     patience: 5
@@ -284,8 +284,8 @@ D48AttModel:
     arch: "GRU+LSTM Attention"
     MAE: 0.2548
     step_ms: 12
-    params: 59664
-    trainable: 59667
+    params: 14575
+    trainable: 14575
     lr: 0.001
     early_stop: True
     patience: 6
