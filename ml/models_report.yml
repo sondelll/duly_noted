@@ -1,0 +1,301 @@
+TfBaseline:
+  V1:
+    arch: "LINEAR"
+    MAE: 0.0785
+    step_ms: NULL
+    params: 0
+    trainable: 0
+    lr: NULL
+    early_stop: NULL
+    patience: NULL
+    epochs: NULL
+    max_epochs: NULL
+    kernel_rgz: NULL
+    recurrent_rgz: NULL
+    bias_rgz: NULL
+    activity_rgz: NULL
+    dropout: NULL
+    recurrent_dropout: NULL
+    kernel_init: NULL
+    cpu_only: False
+
+TfLSTM:
+  V1:
+    arch: "LSTM"
+    MAE: 0.0515
+    step_ms: 8
+    params: 7283
+    trainable: 7283
+    lr: 0.001
+    early_stop: True
+    patience: 3
+    epochs: 10
+    max_epochs: 20
+    kernel_rgz: False
+    recurrent_rgz: False
+    bias_rgz: False
+    activity_rgz: False
+    dropout: False
+    recurrent_dropout: False
+    kernel_init: False
+    cpu_only: False
+
+TfMultiBaseline:
+  V1:
+    arch: "LINEAR"
+    MAE: 0.2495
+    step_ms: 5
+    params: 9120
+    trainable: 9120
+    lr: 0.001
+    early_stop: True
+    patience: 3
+    epochs: 4
+    max_epochs: 20
+    kernel_rgz: False
+    recurrent_rgz: False
+    bias_rgz: False
+    activity_rgz: False
+    dropout: False
+    recurrent_dropout: False
+    kernel_init: "ZEROS"
+    cpu_only: False
+
+TfMultiLSTM:
+  V1:
+    arch: "LSTM"
+    MAE: 0.2066
+    step_ms: 7
+    params: 21704
+    trainable: 21704
+    lr: 0.001
+    early_stop: True
+    patience: 3
+    epochs: 6
+    max_epochs: 20
+    kernel_rgz: False
+    recurrent_rgz: False
+    bias_rgz: False
+    activity_rgz: False
+    dropout: False
+    recurrent_dropout: False
+    kernel_init: "ZEROS"
+    cpu_only: False
+
+FirstLabModel: 
+  V1:
+    arch: "LSTM"
+    MAE: 0.0570
+    step_ms: NULL
+    params: 868681
+    trainable: 868681
+    lr: 0.001
+    early_stop: True
+    patience: 3
+    epochs: 10
+    max_epochs: 15
+    kernel_rgz: False
+    recurrent_rgz: False
+    bias_rgz: False
+    activity_rgz: False
+    dropout: False
+    recurrent_dropout: False
+    kernel_init: False
+    cpu_only: False
+  V2:
+    arch: "LSTM"
+    MAE: 0.0564
+    step_ms: NULL
+    params: 869138
+    trainable: 869138
+    lr: 0.0001
+    early_stop: True
+    patience: 3
+    epochs: 15
+    max_epochs: 15
+    kernel_rgz: False
+    recurrent_rgz: "L2"
+    bias_rgz: False
+    activity_rgz: False
+    dropout: False
+    recurrent_dropout: False
+    kernel_init: False
+    cpu_only: False
+  V3:
+    arch: "LSTM"
+    MAE: NULL
+    step_ms: NULL
+    params: 869138
+    trainable: 869138
+    lr: 0.001
+    early_stop: True
+    patience: 3
+    epochs: 1
+    max_epochs: 1
+    kernel_rgz: False
+    recurrent_rgz: "L2"
+    bias_rgz: False
+    activity_rgz: False
+    dropout: False
+    recurrent_dropout: 0.25
+    kernel_init: False
+    cpu_only: True
+  V4:
+    arch: "LSTM"
+    MAE: 0.0545
+    step_ms: 10
+    params: 869138
+    trainable: 869138
+    lr: 0.001
+    early_stop: True
+    patience: 3
+    epochs: 11
+    max_epochs: 15
+    kernel_rgz: "Orthogonal"
+    recurrent_rgz: "L2"
+    bias_rgz: False
+    activity_rgz: False
+    dropout: False
+    recurrent_dropout: False
+    kernel_init: False
+    cpu_only: False
+  V5:
+    arch: "GRU"
+    MAE: 0.0540
+    step_ms: 9 
+    params: 653450
+    trainable: 653450
+    lr: 0.001
+    early_stop: True
+    patience: 3
+    epochs: 11
+    max_epochs: 15
+    kernel_rgz: "Orthogonal"
+    recurrent_rgz: "L2"
+    bias_rgz: False
+    activity_rgz: False
+    dropout: False
+    recurrent_dropout: False
+    kernel_init: False
+    cpu_only: False
+
+F48Model:
+  V1:
+    arch: "GRU"
+    lMAE: 0.2398
+    step_ms: 7
+    params: 116040
+    trainable: 116040
+    lr: 0.0001
+    early_stop: True
+    patience: 3
+    epochs: 28
+    max_epochs: 35
+    kernel_rgz: False
+    recurrent_rgz: False
+    bias_rgz: False
+    activity_rgz: False
+    dropout: False
+    recurrent_dropout: False
+    kernel_init: False
+    cpu_only: False
+  v2:
+    arch: "GRU"
+    lMAE: 0.2338
+    step_ms: 7
+    params: 116040
+    trainable: 116040
+    lr: 0.0001
+    early_stop: True
+    patience: 5
+    epochs: 30
+    max_epochs: 35
+    kernel_rgz: "Orthogonal"
+    recurrent_rgz: "L2"
+    bias_rgz: False
+    activity_rgz: False
+    dropout: False
+    recurrent_dropout: False
+    kernel_init: False
+    cpu_only: False
+  v3:
+    arch: "GRU"
+    lMAE: 0.2379
+    step_ms: 7
+    params: 116040
+    trainable: 116040
+    lr: 0.001
+    early_stop: True
+    patience: 5
+    epochs: 11
+    max_epochs: 35
+    kernel_rgz: "Orthogonal"
+    recurrent_rgz: "L2"
+    bias_rgz: False
+    activity_rgz: False
+    dropout: False
+    recurrent_dropout: False
+    kernel_init: "ZEROS"
+    cpu_only: False
+
+
+D48Model:
+  V1:
+    arch: "GRU"
+    MAE: 0.2324
+    step_ms: 7
+    params: 59664
+    trainable: 59667
+    lr: 0.0001
+    early_stop: True
+    patience: 5
+    epochs: 20
+    max_epochs: 35
+    kernel_rgz: "Orthogonal"
+    recurrent_rgz: "L2"
+    bias_rgz: False
+    activity_rgz: False
+    dropout: False
+    recurrent_dropout: False
+    kernel_init: "ZEROS"
+    cpu_only: False
+  V2:
+    arch: "GRU"
+    MAE: 0.2298
+    step_ms: 7
+    params: 137875
+    trainable: 137875
+    lr: 0.0001
+    early_stop: True
+    patience: 5
+    epochs: 20
+    max_epochs: 35
+    kernel_rgz: "Orthogonal"
+    recurrent_rgz: "L2"
+    bias_rgz: False
+    activity_rgz: False
+    dropout: False
+    recurrent_dropout: False
+    kernel_init: "ZEROS"
+    cpu_only: False
+
+D48AttModel:  
+  V1:
+    arch: "GRU+LSTM Attention"
+    MAE: 0.2548
+    step_ms: 12
+    params: 59664
+    trainable: 59667
+    lr: 0.001
+    early_stop: True
+    patience: 6
+    epochs: 13
+    max_epochs: 30
+    kernel_rgz: False
+    recurrent_rgz: "L2"
+    bias_rgz: False
+    activity_rgz: False
+    dropout: False
+    recurrent_dropout: False
+    kernel_init: "ZEROS"
+    cpu_only: False
